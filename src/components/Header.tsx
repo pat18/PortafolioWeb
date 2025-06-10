@@ -14,12 +14,12 @@ export const Header = () =>{
             </div>                    
 
             <Navegacion items={[
-                {url:"./", cont:"Inicio"}, 
-                {url:"./stack", cont:"Stack"},                 
-                {url:"./experiencia", cont:"Experiencia"},
-                {url:"./proyectos", cont:"Proyectos"},
-                {url:"./cv", cont:"CV"},
-                {url:"./about", cont:"Sobre mi"}]
+                {url:"./", cont:"Inicio",key:1}, 
+                {url:"./stack", cont:"Stack",key:2},                 
+                {url:"./experiencia", cont:"Experiencia",key:3},
+                {url:"./proyectos", cont:"Proyectos",key:4},
+                {url:"./cv", cont:"CV",key:5},
+                {url:"./about", cont:"Sobre mi",key:6}]
             } estilos="flex flex-col min-[400px]:flex-row p-5 "/>
 
         </div>

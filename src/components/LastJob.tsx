@@ -1,6 +1,4 @@
 
-
-
 const LastJob = ()=>{
     return(
         <section className="w-screen flex flex-col items-center gap-6 p-10 md:flex-row md:gap-8 ">
