@@ -5,7 +5,7 @@ export const Resumen =(  )=> {
 
     return(
 
-        <section className="w-screen flex flex-col items-center gap-6 p-10 md:flex-row md:gap-8 ">
+        <section className="w-full flex flex-col items-center gap-6 p-10 md:flex-row md:gap-8 ">
 
             <div className="md:w-3/5 mx-auto px-4">     
                 <h2 className="font-mono text-xl">¡Hola! Soy Saúl Aguilar, desarrollador web e Ingeniero en Sistemas con base en México.</h2>

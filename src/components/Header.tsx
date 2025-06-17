@@ -5,24 +5,23 @@ export const Header = () =>{
 
     return(
 
-        <div className="flex flex-col md:flex-row w-screen bg-slate-400 justify-evenly items-center py-2">
-
-            <div className="hidden sm:block">
+        <section className="sticky top-0 w-auto flex justify-evenly items-center min-[600px]:bg-slate-400 py-2 px-5 sm:flex-col lg:flex-row">
+            <div className="hidden ">
                 <Link href="./">
                     <h3 className="overflow-hidden font-bold text-4xl">SAUL AGUILAR <span className="font-light text-[1.3rem]"> Desarrollador Web</span></h3>            
                 </Link>
             </div>                    
 
             <Navegacion items={[
-                {url:"./", cont:"Inicio",key:1}, 
-                {url:"./stack", cont:"Stack",key:2},                 
-                {url:"./experiencia", cont:"Experiencia",key:3},
-                {url:"./proyectos", cont:"Proyectos",key:4},
-                {url:"./cv", cont:"CV",key:5},
-                {url:"./about", cont:"Sobre mi",key:6}]
-            } estilos="flex flex-col min-[400px]:flex-row p-5 "/>
+                {url:"./", cont:"INICIO",key:1,icon:"home"}, 
+                {url:"./stack", cont:"STACK",key:2,icon:"stack" },                 
+                {url:"./experiencia", cont:"EXPERIENCIA",key:3,icon:"maletin"},
+                {url:"./proyectos", cont:"PROYECTOS",key:4,icon:"docs"},
+                {url:"./cv", cont:"CV",key:5,icon:"boxdoc"},
+                {url:"./about", cont:"SOBRE MI",key:6,icon:"fire"}]
+            }/>
 
-        </div>
+        </section>
 
     );
 }

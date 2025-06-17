@@ -19,7 +19,7 @@ interface datos {
 }
 
 
-export const Navegacion = ( { items }: datos )=>{    
+export const NavegacionDos = ( { items }: datos )=>{    
 
     const { width } = GetResize();
     const [ navActiva , setNavActiva] = useState(false);
@@ -27,7 +27,7 @@ export const Navegacion = ( { items }: datos )=>{
     
     const datos = items.map( (item) =>{ 
 
-        return <li key={item.key} className={`font-bold whitespace-nowrap py-1 ${ nw && 'bg-[#e0ebeb] p-2' }`}>
+        return <li key={item.key} className="font-bold whitespace-nowrap py-1">
                     <Link href={ item.url }>                        
                         <span>{item.cont}</span>
                     </Link>                
@@ -36,7 +36,7 @@ export const Navegacion = ( { items }: datos )=>{
 
     const contenido = ( ) =>{
         return ( 
-            <ul className={`flex items-center ${ nw ? ' justify-evenly' : 'justify-center divide-[#005792] divide-x-2 '} divide-solid -skew-x-12 py-1 mx-auto `}>
+            <ul className={`flex items-center ${ nw ? ' justify-evenly' : 'justify-center divide-[#005792] divide-x-2 divide-solid -skew-x-12'} py-1 mx-auto `}>
                 { nw  ? datos : 
                     <> 
                         <Link href="./" className=" bg-[#e0ebeb] flex justify-evenly items-center p-2 "><Home />INICIO</Link>  
